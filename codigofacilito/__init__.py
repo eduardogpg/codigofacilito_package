@@ -1,0 +1,1 @@
+print('Hola, nos encontramos en un paquete.')
