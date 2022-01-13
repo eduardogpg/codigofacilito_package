@@ -2,7 +2,7 @@ import requests
 
 
 def articles():
-    """Retorna los próximos talleres en CódigoFacilito.
+    """Retorna los artículos en CódigoFacilito.
 
     >>> type(articles()) == type(list())
     True
