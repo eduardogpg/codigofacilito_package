@@ -20,12 +20,12 @@ item_choices = [tag.value for tag in Items]
 
 
 def main(*args, **kwargs):
-    if kwargs["items"] == Items.WORSHOPS:
+    if kwargs.get("items", None) == Items.WORSHOPS:
         if kwargs.get("unreleased", False):
             logging.info(unreleased())
         else:
             logging.info(released())
-    elif kwargs["items"] == Items.ARTICLES:
+    elif kwargs.get("items", None) == Items.ARTICLES:
         logging.info(articles())
     else:
         logging.error("No valid item selected.")
