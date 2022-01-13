@@ -15,6 +15,16 @@ def unreleased():
 
         # Flat workshops
         return [item["workshop"] for item in workshops]
+
+
+def released():
+    """Retorna los talleres ya realizados en CódigoFacilito.
+
+    >>> type(released()) == type(list())
+    True
+    """
+    response = requests.get('https://codigofacilito.com/api/v2/workshops')
+
     if response.status_code == 200:
-        payload = response.json() 
+        payload = response.json()
         return payload['data']
