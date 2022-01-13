@@ -3,8 +3,12 @@ import logging
 from enum import Enum
 
 from codigofacilito import unreleased, released, articles
+from .config import DEBUG
 
-logging.basicConfig(level=logging.INFO)
+if DEBUG:
+    logging.basicConfig(level=logging.DEBUG)
+else:
+    logging.basicConfig(level=logging.INFO)
 
 
 class Items(str, Enum):
