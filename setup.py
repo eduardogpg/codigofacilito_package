@@ -4,7 +4,7 @@ from setuptools import setup
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text(encoding="utf8")
 
-VERSION = '0.0.3'
+VERSION = '0.0.4'
 DESCRIPTION = 'Permite consumir el API de CódigoFacilito'
 PACKAGE_NAME = 'codigofacilito'
 AUTHOR = 'Ange1D'
