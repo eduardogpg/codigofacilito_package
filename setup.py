@@ -2,14 +2,14 @@ from pathlib import Path # > 3.6
 from setuptools import setup
 
 this_directory = Path(__file__).parent
-long_description = (this_directory / "README.md").read_text()
+long_description = (this_directory / "README.md").read_text(encoding="utf8")
 
-VERSION = '0.0.2'
+VERSION = '0.0.3'
 DESCRIPTION = 'Permite consumir el API de CódigoFacilito'
 PACKAGE_NAME = 'codigofacilito'
-AUTHOR = 'Eduardo Ismael García Pérez'
-EMAIL = 'eduardo@codigofacilito.com'
-GITHUB_URL = 'https://github.com/eduardogpg/codigofacilito_package'
+AUTHOR = 'Ange1D'
+EMAIL = 'ange1d.contact0@gmail.com'
+GITHUB_URL = 'https://github.com/Ange1D/codigofacilito_package/'
 
 setup(
     name = PACKAGE_NAME,
